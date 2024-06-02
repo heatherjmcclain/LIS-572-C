@@ -34,12 +34,12 @@ smaller_state <- total_state %>% select(area_data_type, geography_type, geograph
 # Visualization for the states
 ggplot(smaller_state) +
   geom_point(mapping = aes(x = geography_desc, y = total_units, fill = geography_desc)) +
-  labs(x = "State", y = "Units", title = "Number of Broadband Units by State")
+  labs(x = "State", y = "Units", title = "Number of Broadband Units by State and Territory")
 
 # Also interested to see as bar graph.
 ggplot(smaller_state) +
   geom_col(mapping = aes(x = geography_desc, y = total_units, fill = geography_desc)) +
-  labs(x = "State", y = "Units", title = "Number of Broadband Units by State")
+  labs(x = "State", y = "Units", title = "Number of Broadband Units by State and Territory")
 
 # Visually this is a lot to look at so to clean it up even further we narrowed the dataset to the two states that we are interested in, Alaska and Texas.
 
